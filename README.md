@@ -14,7 +14,7 @@ spring init --build=maven --java-version=1.8 --dependencies=cloud-eureka-server,
 
 ## Modify HOSTS
 ```bash
-127.0.0.1       eureka-peer1 eureka-peer2 eureka-service-p1
+127.0.0.1       eureka-peer1 eureka-peer2 eureka-service-p1 eureka-web
 ```
 
 ## Start the samples
