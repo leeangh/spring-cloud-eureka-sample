@@ -10,5 +10,5 @@ eureka:
       defaultZone: http://eureka-peer1:8761/eureka/,http://eureka-peer2:8762/eureka/
 
   instance:
-    hostname: localhost
+    hostname: eureka-service-p1
     instanceId: ${eureka.instance.hostname}:${server.port}
