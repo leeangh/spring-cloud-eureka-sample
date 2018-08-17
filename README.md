@@ -11,6 +11,11 @@ spring init --build=maven --java-version=1.8 --dependencies=cloud-eureka-server 
 ```bash
 spring init --build=maven --java-version=1.8 --dependencies=cloud-eureka-server,cloud-eureka eureka-service.zip
 ```
+## Create Eureka Web Consumer
+
+```bash
+spring init --build=maven --java-version=1.8 --dependencies=cloud-eureka,web web-app.zip
+```
 
 ## Modify HOSTS
 ```bash
@@ -33,3 +38,5 @@ mvn -Dspring.profiles.active=2 spring-boot:run
 cd eureka-service
 mvn -Dserver.port=8071 spring-boot:run
 ```
+
+Checkout the [Crash Course](https://leeangh.github.io/2018-08-15-Spring-Cloud-Eureka-Start-1-3/)
