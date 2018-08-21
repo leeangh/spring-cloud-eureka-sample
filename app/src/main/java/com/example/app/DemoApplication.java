@@ -15,7 +15,7 @@ import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 @Configuration
-@EnableEurekaClient
+//@EnableEurekaClient
 @EnableAutoConfiguration
 public class DemoApplication {
 

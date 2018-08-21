@@ -3,11 +3,11 @@ spring:
     name: web-app
 
 server:
-  port: 8080
+  port: 8081
   
 eureka:
   client:
-    registerWithEureka: true
+    registerWithEureka: false
     fetchRegistry: true
     serviceUrl:
       defaultZone: http://eureka-peer1:8761/eureka/,http://eureka-peer2:8762/eureka/

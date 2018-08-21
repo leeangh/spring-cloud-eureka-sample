@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: ribbon-app
+
+server:
+  port: 10101
+
+greeting-serive:
+  ribbon:
+    eureka:
+      enabled: false
+    listOfServers:
