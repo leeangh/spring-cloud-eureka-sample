@@ -15,19 +15,24 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DemoApplication {
 
-	@RestController
-	class ServiceInstanceRestController {
+    @RestController
+    class ServiceInstanceRestController {
 
-		@Value("${server.port}")
-		String port;
+        @Value("${server.port}")
+        String port;
 
-		@RequestMapping("/greeting/{name}")
-		public String greeting(@PathVariable String name) {
-			return "Hello " + name + "! I'm service from port : " + port;
-		}
-	}
+        @RequestMapping("/greeting/{name}")
+        public String greeting(@PathVariable String name) {
+            return "Hello " + name + "! I'm service from port : " + port;
+        }
 
-	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
-	}
+        @RequestMapping("/greeting")
+        public String greeting() {
+            return "Greetings! I'm service from port : " + port;
+        }
+    }
+
+    public static void main(String[] args) {
+        SpringApplication.run(DemoApplication.class, args);
+    }
 }
