@@ -9,4 +9,4 @@ greeting-serive:
   ribbon:
     eureka:
       enabled: false
-    listOfServers:
+    listOfServers: eureka-service-p1:10073,eureka-service-p1:10072
